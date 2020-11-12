@@ -18,6 +18,8 @@ class NewsAssignmentTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
+    
+    // Asynchronous network integration testing using expectation
     func testNetworkRequestAsync() {
         let networkService = NetworkService()
         
@@ -35,6 +37,25 @@ class NewsAssignmentTests: XCTestCase {
                 XCTFail("expecation error = \(error)")
             }
         }
+    }
+    
+    // Network Test using Mocking
+    func test_Get_RequestsTheURL() {
+        
+        let mockSession = MockURLSession()
+        let subject: NetworkService = NetworkService(session: mockSession)
+        
+        let dataTask = MockURLSessionDataTask()
+        mockSession.nextDataTask = dataTask
+        
+        let url = URL(string: urlMostPopularView)!
+        
+        subject.requestMostPopularViewed(urlStr: urlMostPopularView) { (error, models) in
+            print("Error: \(String(describing: error)) & Models: \(String(describing: models))")
+        }
+        
+        XCTAssertEqual(mockSession.lastURL, url)
+        XCTAssert(dataTask.resumeWasCalled)
     }
     
 }

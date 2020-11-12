@@ -15,13 +15,19 @@ enum NetworkServiceError: Error {
 
 class NetworkService {
     
+    private let session: URLSessionProtocol
+    
+    init(session: URLSessionProtocol = URLSession.shared) {
+        self.session = session
+    }
+    
     func requestMostPopularViewed(urlStr: String, completionHandler: @escaping (Error?, [NewsModel]?)->Void) {
         
         guard let url = URL(string: urlStr) else {
             return
         }
         
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
+        session.dataTask(with: url) { (data, response, error) in
             guard let httpResponse: HTTPURLResponse = response as? HTTPURLResponse, httpResponse.isResponseOK() else {
                 completionHandler(NetworkServiceError.invalid("Invalid status code"), nil)
                 return

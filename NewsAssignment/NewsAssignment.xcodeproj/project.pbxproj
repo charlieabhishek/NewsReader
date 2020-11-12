@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF185EB6255DD925007C53DC /* NetworkProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF185EB5255DD925007C53DC /* NetworkProtocols.swift */; };
+		EF185EBE255DDB0D007C53DC /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF185EBD255DDB0D007C53DC /* MockURLSession.swift */; };
+		EF185EC3255DDDFF007C53DC /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF185EC2255DDDFF007C53DC /* MockURLSessionDataTask.swift */; };
 		EFE04010255D2256003FE67D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE0400F255D2256003FE67D /* AppDelegate.swift */; };
 		EFE04012255D2256003FE67D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE04011255D2256003FE67D /* SceneDelegate.swift */; };
 		EFE04014255D2256003FE67D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE04013255D2256003FE67D /* ViewController.swift */; };
@@ -41,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF185EB5255DD925007C53DC /* NetworkProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocols.swift; sourceTree = "<group>"; };
+		EF185EBD255DDB0D007C53DC /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		EF185EC2255DDDFF007C53DC /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
 		EFE0400C255D2256003FE67D /* NewsAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE0400F255D2256003FE67D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFE04011255D2256003FE67D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +137,8 @@
 			children = (
 				EFE04026255D2257003FE67D /* NewsAssignmentTests.swift */,
 				EFE04028255D2257003FE67D /* Info.plist */,
+				EF185EBD255DDB0D007C53DC /* MockURLSession.swift */,
+				EF185EC2255DDDFF007C53DC /* MockURLSessionDataTask.swift */,
 			);
 			path = NewsAssignmentTests;
 			sourceTree = "<group>";
@@ -174,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				EFE04050255D2B71003FE67D /* NetworkService.swift */,
+				EF185EB5255DD925007C53DC /* NetworkProtocols.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -320,6 +329,7 @@
 				EFE04014255D2256003FE67D /* ViewController.swift in Sources */,
 				EFE04049255D26D1003FE67D /* MostPopularNewsModel.swift in Sources */,
 				EFE04067255D3461003FE67D /* NewsTableViewCell.swift in Sources */,
+				EF185EB6255DD925007C53DC /* NetworkProtocols.swift in Sources */,
 				EFE04010255D2256003FE67D /* AppDelegate.swift in Sources */,
 				EFE04012255D2256003FE67D /* SceneDelegate.swift in Sources */,
 				EFE04051255D2B71003FE67D /* NetworkService.swift in Sources */,
@@ -332,6 +342,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF185EC3255DDDFF007C53DC /* MockURLSessionDataTask.swift in Sources */,
+				EF185EBE255DDB0D007C53DC /* MockURLSession.swift in Sources */,
 				EFE04027255D2257003FE67D /* NewsAssignmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
