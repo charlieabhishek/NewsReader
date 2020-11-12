@@ -7,7 +7,9 @@
 - SFSafariViewController is used as recommended by apple to load the detail page.
 <br/><br/>
 
+<div>
 <img src="screenshots/image1.png" width="270" height="550"/>
 <img src="screenshots/image2.png" width="270" height="550"/>
 <img src="screenshots/image3.png" width="270" height="550"/>
+</div>
 
