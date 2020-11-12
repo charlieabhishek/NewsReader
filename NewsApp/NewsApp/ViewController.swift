@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  NewsAssignment
+//  NewsApp
 //
 //  Created by Abhishek Kumar on 12/11/20.
 //
